@@ -22,6 +22,8 @@ const calculateResult = (num1, num2, operation) => {
             return num1 * num2;
         case("-"):
             return num1 - num2;
+        default:
+            return num1;  // added a default to get rid of the ES lint error 
     }
 }
 
